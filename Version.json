@@ -1,24 +1,22 @@
 {
-  "version": "0.2.9",
-  "released_on": "2026-11-18",
-  "updated_at": "2026-11-18T19:47:43+09:00",
+  "version": "0.2.10",
+  "released_on": "2026-11-19",
+  "updated_at": "2026-11-19T11:50:00+09:00",
   "patch_notes": [
-    "[0.2.9] 「説明書」のタブを足しました（設定の右）。アプリの使い方を、タブごと・機能ごとに短くまとめた説明書をアプリの中で読めます。接続・アシスト・マッピング・オーバーレイ・ボード・ログ・設定の説明書が入っています（サウンドの説明書は、あとで足します）。",
-    "[0.2.9] 説明書は、左の索引から見たい所へ移れます。上の欄に言葉を入れると説明書の中を検索でき、「つながらない」のような言い方でも探せます（ひらがなとカタカナ・全角と半角は区別しません）。",
-    "[0.2.9] 「別ウインドウで開く」を押すと、説明書を別の窓に出せます。アプリを操作しながら、横に置いて読めます。「常に手前」のスイッチで、ほかの窓の上に出したままにもできます（最初はオフ）。窓の大きさと位置は覚えます。",
-    "[0.2.9] オーバーレイの入室通知で、TikTok の表示名を受け取れなかった入室は、出さないようにしました。これまでは、表示名の代わりに TikTok の ID が配信画面に出ることがありました。",
-    "[0.2.9] チャットボックス連携でも、TikTok の表示名を受け取れなかったコメントとギフトは、流さないようにしました。これまでは、表示名の代わりに TikTok の ID が VRChat のチャットボックスに出ることがありました。",
-    "[0.2.9] 画面の案内を、いまの画面の並びに合わせて直しました。Discord 通知の「配信者IDが未登録です」は「接続タブで登録」に、オーバーレイのポートがほかのソフトと重なったときの案内は「オーバーレイタブのポート設定」に直しています。ルール編集の「演出中のBGM」の長さの説明も、実際に決まる順（リセット秒数 → 動画・効果音 → 入れた秒数）に直しました。",
-    "[0.2.9] 自動接続モードで配信を待っているあいだに「自動接続モードの確認間隔」を変えると、すぐ新しい間隔に切り替わるようにしました（これまでは「設定を保存」を押すまで切り替わりませんでした）。",
-    "[0.2.9] ボードの「画像をコピー」で、画像を dashboard フォルダに保存できなかったときは「画像のコピーに失敗しました」と出すようにしました（これまでは、保存できていなくても「PNG を残しました」と出ていました）。",
-    "[0.2.9] ギフト名の日本語表記の表を TikTok の最新の一覧で作り直し（6 件増・2 件は名前を直しました）、ギフト画像を 6 件同梱に足しました。"
+    "[0.2.10] アシストタブの「リスナーの表示設定」の「編集する」で開くウインドウで、表示名をクリックするとその表示名の Google 検索を、TikTok ID をクリックするとその人の TikTok のプロフィールのページを、ブラウザで開けるようにしました。「さがす」の人数の右に足したスイッチ「表示名とTikTokIDで検索」がオンのあいだだけ開きます（最初はオン。オフにすると、クリックしても何も起こりません。オンとオフは覚えます）。",
+    "[0.2.10] アシストウインドウに「カスタムログ」を足しました。シェア・フォロー・スーパーファン入室・スーパーファン加入・メンバーレベルアップが流れます。アシストタブに足した「カスタムログ設定」で、種類ごとに出すかを選べます（最初はどれもオン）。「全体の表示設定」の「表示する要素」で、ギフトログの右に出す「カスタムログ（縦）」か、コメントビュワーとギフトログの下に出す「カスタムログ（横）」を選べます（どちらか1つ。最初は（縦））。文字の大きさも変えられます。",
+    "[0.2.10] アシストタブの枠の並びを「全体の表示設定 → アシスト設定 → カスタムログ設定 → リスナーの表示設定」に変えました。いちばん上にあった、いまの指示の見本（と「読み上げから外したコメント」の行）は外しました。指示はアシストウインドウで見てください。「アシストウインドウの表示調整」は「全体の表示設定」に、「前回の指示」は「アシストの前回の指示」に名前を変え、「XSOverlay等でアシストウインドウを取り込んでください。」などの案内も外しました。",
+    "[0.2.10] 「アシストを使う」がオフのときにアシストウインドウを開くと、「アシストを有効にする」とスイッチが出るようにしました。スイッチをオンにすると、アシストが使えるようになります（アシストタブの「アシストを使う」もオンになります）。",
+    "[0.2.10] マウスを乗せたときに出る説明（ツールチップ）の文字を 1.5 倍に大きくし、どの説明も同じ大きさにそろえました。説明が画面の端からはみ出すときは、内側に寄せて出します。",
+    "[0.2.10] アシストタブの「リスナーの表示設定」の一覧と、「編集する」で開くウインドウの一覧で、行の境目が分かりやすいように、1行おきに地の色の明るさを少し変えました。",
+    "[0.2.10] ギフト名の日本語表記の表を TikTok の最新の一覧で作り直し（3 件増）、ギフト画像を 3 件同梱に足しました。"
   ],
   "message": "",
   "file": {
-    "name": "VRChatStreamingEffector-0.2.9.exe",
-    "size": 58394603,
-    "sha256": "f6527b5648693c04c28dae79eb30c2ba4a6436e143de7cb057b5952ca4bc8486",
-    "signature": "mvJpGmNt6R0gsJ+oB0HgCY3n73d0OWoymc7MubAzgB2eGtUuauSBTxnkZp0/sDFpIiELIM/eseclOfcWTqMAIIScNFDRavyxSSaFtTnVlmazyzPHZvFyhqKgH9+DufVLvaRkIi+RarqaUPJQAJv3xQdnshmK7/Nl53dG48O/pjKOde4ZZ9jFu18PGVwfVnOYoxJFBwiPYuzxMR1bbevlUVkRq/QTyxnCEQs9B+FXjEDyTWXhoO9ZGfqMPYwqKoTZnM62kHk/nptIjwiVYkn4eYnLpRAcYBX8FT84KY76HVsg6J6/NMluJ2aBDtfSa0weRgsGLL8WFMLMQ9gvOx9k0JDhR2V1k4USpziLovsGZQAVNRfftulxKBq4QVKUBla6jQX+/0He0zRLPtYIZ4lR4LQm4MLU4J97cDo279vFtfP+vkXSfh01ylXxHy64J14YihzKTrMy30Y7524myQ/dGSPHeYqp/90ZFvNzdNJY/IEYjPcERf654WYVaUBP6gl8",
+    "name": "VRChatStreamingEffector-0.2.10.exe",
+    "size": 58437176,
+    "sha256": "088e7afd94e28c8b954647a9d9e37d60d20a0bb84536986e31840a18e17ab265",
+    "signature": "AUiuxt6KGg0i6I7ZCJKif+bMcy0IxMOVqnAO4fCouzZd6NtRjB0cFai9aLAU8YNNHKWpZXjkFj2IAXx33e+vOR/4FKC01j2yymXTD7RdZWe/qasdSn0SKkj8PlKqVisg4J8+qJo1C4QhSSsYBQ0Z6AysG4fkTBcWy3AqjibSErTHvlTVA0b1+T/lEpq6Hchz5AoQmTtp5l+PAgMs2v2kjP1gdyYtu1KhXLEENmvBzirnmZ+SiEOzaYhg/EqpiBSYq5rSucj4lGAcWQvvaxba/Slf+UsKN3HbJReyOMKt/N/FDvZ0KhI6Dsj5sHlbdIcXoHJsbG1N7dcDp4Xis5K6t+1QLMRU9xY66wDWmKyahYDQz2aiyfkapv0PMDhHwXlvuFR/ZUlhT7lbtQTXVv6EY3oGKIghYyJvAqJEuK3o4K1LVtRklb9CbzH50k35d1LLn0DdFGEEH2FcsLG8NjuP5dTv4dboNBbFnTrqCTpjv5Z66kS9jYj4N/pMochTLYbk",
     "key_id": "2026a"
   }
 }
