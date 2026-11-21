@@ -1,22 +1,22 @@
 {
-  "version": "0.2.10",
-  "released_on": "2026-11-19",
-  "updated_at": "2026-11-19T11:50:00+09:00",
+  "version": "0.2.11",
+  "released_on": "2026-11-21",
+  "updated_at": "2026-11-21T09:59:21+09:00",
   "patch_notes": [
-    "[0.2.10] アシストタブの「リスナーの表示設定」の「編集する」で開くウインドウで、表示名をクリックするとその表示名の Google 検索を、TikTok ID をクリックするとその人の TikTok のプロフィールのページを、ブラウザで開けるようにしました。「さがす」の人数の右に足したスイッチ「表示名とTikTokIDで検索」がオンのあいだだけ開きます（最初はオン。オフにすると、クリックしても何も起こりません。オンとオフは覚えます）。",
-    "[0.2.10] アシストウインドウに「カスタムログ」を足しました。シェア・フォロー・スーパーファン入室・スーパーファン加入・メンバーレベルアップが流れます。アシストタブに足した「カスタムログ設定」で、種類ごとに出すかを選べます（最初はどれもオン）。「全体の表示設定」の「表示する要素」で、ギフトログの右に出す「カスタムログ（縦）」か、コメントビュワーとギフトログの下に出す「カスタムログ（横）」を選べます（どちらか1つ。最初は（縦））。文字の大きさも変えられます。",
-    "[0.2.10] アシストタブの枠の並びを「全体の表示設定 → アシスト設定 → カスタムログ設定 → リスナーの表示設定」に変えました。いちばん上にあった、いまの指示の見本（と「読み上げから外したコメント」の行）は外しました。指示はアシストウインドウで見てください。「アシストウインドウの表示調整」は「全体の表示設定」に、「前回の指示」は「アシストの前回の指示」に名前を変え、「XSOverlay等でアシストウインドウを取り込んでください。」などの案内も外しました。",
-    "[0.2.10] 「アシストを使う」がオフのときにアシストウインドウを開くと、「アシストを有効にする」とスイッチが出るようにしました。スイッチをオンにすると、アシストが使えるようになります（アシストタブの「アシストを使う」もオンになります）。",
-    "[0.2.10] マウスを乗せたときに出る説明（ツールチップ）の文字を 1.5 倍に大きくし、どの説明も同じ大きさにそろえました。説明が画面の端からはみ出すときは、内側に寄せて出します。",
-    "[0.2.10] アシストタブの「リスナーの表示設定」の一覧と、「編集する」で開くウインドウの一覧で、行の境目が分かりやすいように、1行おきに地の色の明るさを少し変えました。",
-    "[0.2.10] ギフト名の日本語表記の表を TikTok の最新の一覧で作り直し（3 件増）、ギフト画像を 3 件同梱に足しました。"
+    "[0.2.11] アシストウインドウの上にあった「アシスト」の列をなくし、「常に手前」のスイッチをウインドウの右上（いまの指示の見出しの行）に移しました。コメントビュワー・ギフトログ・カスタムログの見出しも外しました。そのぶん、指示と一覧を広く出せます。",
+    "[0.2.11] 1コインのギフトを何種類も続けて送ってもらったときは、アシストウインドウの指示の見出し・前回の指示・ギフトログに、ギフト名（「バラ ほか」）を出さずに、送られたギフトの画像を全部並べるようにしました（「ギフトの画像を表示」がオフのときは、これまでどおり名前で出します）。",
+    "[0.2.11] アシストウインドウを、閉じた場所でそのまま開くようにしました。これまでは、画面の端やタスクバーにかかる位置で閉じると、次に開いたときに画面の内側へずらして開いていました（ウインドウが画面より大きいときだけ、画面に入る大きさにして寄せます）。説明書の別ウインドウも同じです。",
+    "[0.2.11] アシストウインドウの「前回の指示」で、配信につなぎ直して一覧が空になったときに、前のアイコンが残って見えていたのを直しました。",
+    "[0.2.11] アシストタブの「文字の大きさ」を「アシストの文字の大きさ」に改め、変わるのをいまの指示とその見出しだけにしました（前回の指示と、指示が無いあいだの文の大きさは変わりません）。「コメントビュワーの文字の大きさ」は「コメントの文字の大きさ」に、表示する要素の「コメントビュワー」は「コメント」に改めました。コメント・ギフトログ・カスタムログの文字の大きさは 40 px までにしました（40 px より大きくしていた場合は 40 px になります）。",
+    "[0.2.11] 「アシストを使う」のオン・オフを覚えるようにしました（これまでは起動するたびにオフに戻っていました）。初めて起動したときはオンです。アシストウインドウを閉じているあいだは指示を作らず、入室の読み取りもしないので、オンのままでもアプリは重くなりません。初めて起動したときの表示する要素は、アシスト・コメント・ギフトログ・カスタムログ（横）です。",
+    "[0.2.11] ギフト名の日本語表記の表を TikTok の最新の一覧で作り直し（6 件増）、ギフト画像を 7 件同梱に足しました。"
   ],
   "message": "",
   "file": {
-    "name": "VRChatStreamingEffector-0.2.10.exe",
-    "size": 58437176,
-    "sha256": "088e7afd94e28c8b954647a9d9e37d60d20a0bb84536986e31840a18e17ab265",
-    "signature": "AUiuxt6KGg0i6I7ZCJKif+bMcy0IxMOVqnAO4fCouzZd6NtRjB0cFai9aLAU8YNNHKWpZXjkFj2IAXx33e+vOR/4FKC01j2yymXTD7RdZWe/qasdSn0SKkj8PlKqVisg4J8+qJo1C4QhSSsYBQ0Z6AysG4fkTBcWy3AqjibSErTHvlTVA0b1+T/lEpq6Hchz5AoQmTtp5l+PAgMs2v2kjP1gdyYtu1KhXLEENmvBzirnmZ+SiEOzaYhg/EqpiBSYq5rSucj4lGAcWQvvaxba/Slf+UsKN3HbJReyOMKt/N/FDvZ0KhI6Dsj5sHlbdIcXoHJsbG1N7dcDp4Xis5K6t+1QLMRU9xY66wDWmKyahYDQz2aiyfkapv0PMDhHwXlvuFR/ZUlhT7lbtQTXVv6EY3oGKIghYyJvAqJEuK3o4K1LVtRklb9CbzH50k35d1LLn0DdFGEEH2FcsLG8NjuP5dTv4dboNBbFnTrqCTpjv5Z66kS9jYj4N/pMochTLYbk",
+    "name": "VRChatStreamingEffector-0.2.11.exe",
+    "size": 58469862,
+    "sha256": "44faf2828965fda2bdccd18a67c7fb912f15f5808387f47db86f3647e522eb30",
+    "signature": "denjmz+c1HMtMhTrVDouYyKWq66IsSwHLlxph6mil/t1mi8o+YMnBL0j6YLQMas9/ZnARE8w7J5rs6FBXETWaBajqv/ynisAKXISgaAoBZg3SaWFxSIk/n8SUrH90F4u+QEspBvjjfY54+ytCk8796c4WuAMoEoPVCDniK0fmGRO/l3bZrzCeX/4OTCX1no0EJeHQJimrOu5GMPxeIgSd1cxaiHe70mD3bzIkV+wxl7dGQW5SzIisTQKhUh7fGR4hgud32o0bMOTSOlVhN+j/nJ+CMeeY2Vt/28v+HzGwiaAwrY462CA+gPNzBxTakQU9MVweeTb/iIw/Y7/0BN2eAz0M4np0geZWssovuSi+BDtRjrixgJVLKHxRDalfb2cAW5RWmxZVNRaG4xae28aCTfn4AnDrH/0yzsVs/RW2wlKHusVc34c9i+RRtmJANh7mYLh+ftrkLp2ofZZv7oCRzmtaEjQ9EwrR8KMiPQCn0pr8dgPfnYfIF8UVZSfjQ8G",
     "key_id": "2026a"
   }
 }
