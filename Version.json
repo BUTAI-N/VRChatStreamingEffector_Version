@@ -1,21 +1,18 @@
 {
-  "version": "0.2.13",
-  "released_on": "2026-11-23",
-  "updated_at": "2026-11-23T20:03:47+09:00",
+  "version": "0.2.14",
+  "released_on": "2026-11-24",
+  "updated_at": "2026-11-24T06:11:34+09:00",
   "patch_notes": [
-    "[0.2.13] 情報タブに「AI の要約で使う部品のライセンス」を足しました。llama.cpp（MIT License）・Qwen3.5-4B（Apache License 2.0）と、使用するモデルのファイル（Qwen3.5-4B-Q4_K_M.gguf）のライセンスの原文を、アプリの中で読めます。AI を読み込む前は「まだ読み込んでいません」と出て、「AI の準備」で読み込んだ（ダウンロードした）ときから適用されることが分かるようにしました。",
-    "[0.2.13] 配信に接続しているときや自動接続モードのときも、「ダウンロードして準備する」と「AI で要約」を押せるようにしました。押すと、接続中は AI を動かせないことと、接続中なら切断することを確かめるメッセージが出て、「OK」を押したときだけ、切断（自動接続モードもオフ）してから準備・要約を始めます。",
-    "[0.2.13] AI の要約に「趣味・仕事」「地域」「最近あったこと」を足しました。コメントに書かれていない項目は「なし」と出ます。地域は都道府県か地方まで、仕事は種類までにしています。前のバージョンで要約した人は、次に「AI で要約」を押したときに、新しい項目で要約し直します。",
-    "[0.2.13] 設定タブのいちばん下に「VR配信時にVRChatのウインドウを縮小して最適化を行う」を足しました。「VR起動時に、VRChatのウインドウを縮小する（64×36）」をオンにすると（初期設定はオフ）、VRChat を VR で起動したときだけ、VRChat のウインドウを小さくして VR 配信の負荷を減らします。デスクトップで起動したときは触りません（VRChat のログで見分けます）。スイッチを切ったとき・アプリを閉じたとき・VRChat を閉じたあとは、元の大きさに戻します（次にデスクトップで起動したとき、小さく開かないように）。",
-    "[0.2.13] オーバーレイタブの「動画」の「「テスト」で流す動画」に、テスト用の動画（VideoTest_1_1080x1920_10s_loop.webm。透過あり・10 秒・1080x1920）を同梱しました。いちばん上に出ます。videos フォルダに動画を入れていなくても、レイヤーのリンクをテストできます。テスト用の動画は、ルールの動画の一覧には出ません。",
-    "[0.2.13] ギフト名の日本語表記の表を TikTok の最新の一覧で作り直し（5 件増・一覧から無くなった 17 件を外しました）、ギフト画像を 5 件同梱に足しました。"
+    "[0.2.14] リスナーノートの「AI で要約」で、メモに書いたことを、コメントより優先して要約に使うようにしました。AI の要約がまちがっていたときは、メモに正しい内容を書いて「AI で要約」を押すと、メモに合わせて要約し直します（メモを書き替えた人は、新しいコメントが無くても要約し直します）。メモの見出しは「メモ（AI要約の訂正にも使用できます）」にしました。",
+    "[0.2.14] 設定タブの「VR配信時にVRChatのウインドウを縮小して最適化を行う」を「配信実績の送信」の下へ移し、説明から配信ソフトの取り込みについての文を外しました。",
+    "[0.2.14] ギフト名の日本語表記の表を TikTok の最新の一覧で作り直し、一覧から無くなった 6 件を外しました。"
   ],
   "message": "",
   "file": {
-    "name": "VRChatStreamingEffector-0.2.13.exe",
-    "size": 63213476,
-    "sha256": "bc5bf6145f15b79f20d110988f67726d0cfc50b30bc818d484c0885ad17c8874",
-    "signature": "I5GM1U7sk8jPXuW++6yj4O9QlbLxUoQs5dmfslyWLYthCEf6iP4cTgnC3FwjBfPSox4mtn9H54NOtkucIJeXDx5l7EFEo7LF5t6RZkGXqjbBtvgkrk3Ty1F05mj6MPed+jHlFmIWatNM4T8++nLFkRyIUkn3IPedZjTTSv7Kl2Xicda/xrhWVb0AmjdGBlsj8kwH6doxmJwekQlCdnGID9OpzyTld+0S94eOxz72bFzC+I5I0QWIpAr/dMnYEjyfoxl9kw1KVvWEiIPFTky3muoeDVPoDmRybx5BLpjrrcwaQyJ9LgdhLpLYNbUg3bjOHaybM2HGc7GbDCx5UIjW10+Je8f3oza4tuZtWgBgr9qvmUjuteUYZGdll5KYoCmQI7v8LAAt7OkElcaBTcDFuNHSE3ej07VnZfnmMoYjOt2Rzrm1YDVyRMaTxGO8LzY6VOUed1UtLGBbOTsRs9PJZYcgmUdgIV3Wi6VOa2K2YFn0f3INzpW5QC2UduxnOQL3",
+    "name": "VRChatStreamingEffector-0.2.14.exe",
+    "size": 63215001,
+    "sha256": "c671b2867fa54d520aeb37bb6376f2c9079c59a29961969f2ff78693903c5799",
+    "signature": "K1rdMKr/3GySQAZiPe8jdpqUt20jH5QtKxl/1Y7fofvE88QoCgmWJbeD7G4AMiljbzBkONzR3PPw9Hf0nbITV8LcVbDLocytlrWJ9b1P6ATxXQ9TYlIiM6tBEn59C4/nqfGg8BoFQrO+sVmoIWxIJVj5n0rj4SSrUXOjbdIjBmqsk/MZFSLBE/XCapdhz5S3lbB1VQ8ICg3mSqKfdqlnhguFEmPoCaNyK+mCrxMygDAFbHYvR7XoMzxjK8PEiDMblIACCzPE3Ui9f8ae7u02GS1/fBED6qnBwehS1X/G/1021gApy+k3t0NwqTl9ax5AdYC1KnTfTeMnBvOQ/X6ymntdVYZ4nkOglKy5KhiIxTDs8OJLPOEO3HPDCoZTt5Re5pPQ1wCn7kP+9rrsTV9db+2gr0EHTCjwzz4o++GIf6PgJ7yYj/gWsbAZPyhGUk3A8tT2YRMq5SQgCuWz/2ctWFfPY9rxIvHkzSrlKY+r5k8KrHOBXZ/i/egD4APZpo0X",
     "key_id": "2026a"
   }
 }
