@@ -1,24 +1,21 @@
 {
-  "version": "0.2.12",
-  "released_on": "2026-11-22",
-  "updated_at": "2026-11-22T08:12:23+09:00",
+  "version": "0.2.13",
+  "released_on": "2026-11-23",
+  "updated_at": "2026-11-23T20:03:47+09:00",
   "patch_notes": [
-    "[0.2.12] アシストタブの「リスナーの表示設定」の下に「リスナーノート」を足しました。リスナーごとに、交流した日（コメント・ギフト・フォロー・シェアなどがあった日）・コメント・ギフトを記録し、「リスナーノートを開く」で読み返せます。記録するのは配信者IDの配信に接続しているときだけで、このパソコンの listener_notes.db にだけ残します。",
-    "[0.2.12] リスナーノートでは、人ごとに、交流した日数・最後と最初に来た日・よく来る時間帯・一人称・コメント・累計コインなどを 4 つ × 2 段のタイルで、かんたん要約・主に話した内容・大きなギフトの日・最近のコメントを表で出します（AI は使わず、性別や年代は推定しません。最近のコメントは見出しのクリックで開きます）。自由に書けるメモもあります。さがす・並べ替え・絞り込みができます。TikTok ID をクリックすると、その人のプロフィールをブラウザで開きます。",
-    "[0.2.12] リスナーノートのウインドウの文字の大きさは、アシストタブの「リスナーノート」の枠の「リスナーノートの文字の大きさ」で変えられます（100〜200%。最初は 120%）。",
-    "[0.2.12] リスナーノートの「過去のログから取り込む」で、これまでの配信のログから記録を入れられます（同じログを二度は数えません）。",
-    "[0.2.12] リスナーの表示設定の編集のウインドウで、各行の右端の「一覧から消す」を「ノート」に替えました。押すとその人のリスナーノートを開きます。記録を消すときは、リスナーノートの「このリスナーを削除」で、確かめてから消します。",
-    "[0.2.12] リスナーノートに「AI で要約」を足しました。このパソコンの中の AI が、コメントが 5 回以上のリスナーの記録をまとめて「どんな話をする人か・よく出る話題・最近の様子・最後のやりとり」に要約します（まだ要約していない人と、要約のあとにコメントがあった人だけ）。記録を外へ送ることはありません。動かすのはボタンを押したときだけで、配信に接続しているあいだと自動接続モードのあいだは動きません（要約の途中で接続が始まったら、すぐ止めます）。",
-    "[0.2.12] アシストウインドウのカスタムログに「指定したギフト」を足しました。アシストタブの「カスタムログ設定」の「ギフトを選ぶ」で選んだギフト（いくつでも。選ぶ画面はマッピングタブの「ギフト一覧」と同じです）が届いたら、ギフトログと同じ形（画像・名前・ギフト名・個数・コイン）で流します。同じ人から 30 秒のうちに続けて届いたら 1 行にまとめます。ギフトログにも、これまでどおり出ます。",
-    "[0.2.12] AI は「AI の準備」で準備します。グラフィックボード（専用メモリ 6GB 以上）・ディスクの空き（6GB 以上）・Windows を診断し、条件に届くときだけ、実行部品（llama.cpp・約 38MB）と AI のモデル（Qwen3.5-4B・約 3GB）を配布元から直接ダウンロードします。中身を確かめてから使い、あとから「AI のデータを削除」で消せます。AI を準備しなくても、かんたん要約はいつでも使えます。",
-    "[0.2.12] ギフト名の日本語表記の表を TikTok の最新の一覧に合わせました（FEST のギフト 6 件の名前を新しくし、一覧から無くなった 6 件を外しました）。"
+    "[0.2.13] 情報タブに「AI の要約で使う部品のライセンス」を足しました。llama.cpp（MIT License）・Qwen3.5-4B（Apache License 2.0）と、使用するモデルのファイル（Qwen3.5-4B-Q4_K_M.gguf）のライセンスの原文を、アプリの中で読めます。AI を読み込む前は「まだ読み込んでいません」と出て、「AI の準備」で読み込んだ（ダウンロードした）ときから適用されることが分かるようにしました。",
+    "[0.2.13] 配信に接続しているときや自動接続モードのときも、「ダウンロードして準備する」と「AI で要約」を押せるようにしました。押すと、接続中は AI を動かせないことと、接続中なら切断することを確かめるメッセージが出て、「OK」を押したときだけ、切断（自動接続モードもオフ）してから準備・要約を始めます。",
+    "[0.2.13] AI の要約に「趣味・仕事」「地域」「最近あったこと」を足しました。コメントに書かれていない項目は「なし」と出ます。地域は都道府県か地方まで、仕事は種類までにしています。前のバージョンで要約した人は、次に「AI で要約」を押したときに、新しい項目で要約し直します。",
+    "[0.2.13] 設定タブのいちばん下に「VR配信時にVRChatのウインドウを縮小して最適化を行う」を足しました。「VR起動時に、VRChatのウインドウを縮小する（64×36）」をオンにすると（初期設定はオフ）、VRChat を VR で起動したときだけ、VRChat のウインドウを小さくして VR 配信の負荷を減らします。デスクトップで起動したときは触りません（VRChat のログで見分けます）。スイッチを切ったとき・アプリを閉じたとき・VRChat を閉じたあとは、元の大きさに戻します（次にデスクトップで起動したとき、小さく開かないように）。",
+    "[0.2.13] オーバーレイタブの「動画」の「「テスト」で流す動画」に、テスト用の動画（VideoTest_1_1080x1920_10s_loop.webm。透過あり・10 秒・1080x1920）を同梱しました。いちばん上に出ます。videos フォルダに動画を入れていなくても、レイヤーのリンクをテストできます。テスト用の動画は、ルールの動画の一覧には出ません。",
+    "[0.2.13] ギフト名の日本語表記の表を TikTok の最新の一覧で作り直し（5 件増・一覧から無くなった 17 件を外しました）、ギフト画像を 5 件同梱に足しました。"
   ],
   "message": "",
   "file": {
-    "name": "VRChatStreamingEffector-0.2.12.exe",
-    "size": 59544138,
-    "sha256": "acc594368e6ce421600ed2e162ce51c48dd2c0b00ff3105d751569eead514ab7",
-    "signature": "V9Rzylp6MjhhhdzW8LNyZ8UFKV7agHWTjEThcgxhHt6ZAr/0Z+8Od7JclH7w9+n5dcA9cWdjNm1Jo6iIEoq2wPHx+kH99lIao6QolHPh+ib1DMa1SmPY6sy9GC9/8NnUQ7yt7KaG5bY1ygmp+BJ04ihbdlzvUU43hVNglio5R+Hnk0bC4GVlvbdghbcaYgtQOrlQi/+jQf6o1rdJ1HtrbFskUF0DR3m0w/e10B7pwbBknLwX5lUoGgdBsmBzQVlTNAH3DhL+bN7svsx0Loju09P+QCS1CqbCRXY1kKYxRAcd1+ZGKVYNpQUIo9swyC1v5uXiz1Q/IhP7MjIL1hO7D5A5VaoMspI97W2/H3yFr/O0a2x7R0euAthkgasLcFz1c4On0IRODaHeavOb7tCUSD3PTfgzbHlM8MokcMYL1ZeudkirXFYVCJuukQB/v5hOLR/0q2WjGl7/C0elSIZ+ykNbf5PddHVlvxlXjmTSOEvituAMzw59vrJ5ynu19tJq",
+    "name": "VRChatStreamingEffector-0.2.13.exe",
+    "size": 63213476,
+    "sha256": "bc5bf6145f15b79f20d110988f67726d0cfc50b30bc818d484c0885ad17c8874",
+    "signature": "I5GM1U7sk8jPXuW++6yj4O9QlbLxUoQs5dmfslyWLYthCEf6iP4cTgnC3FwjBfPSox4mtn9H54NOtkucIJeXDx5l7EFEo7LF5t6RZkGXqjbBtvgkrk3Ty1F05mj6MPed+jHlFmIWatNM4T8++nLFkRyIUkn3IPedZjTTSv7Kl2Xicda/xrhWVb0AmjdGBlsj8kwH6doxmJwekQlCdnGID9OpzyTld+0S94eOxz72bFzC+I5I0QWIpAr/dMnYEjyfoxl9kw1KVvWEiIPFTky3muoeDVPoDmRybx5BLpjrrcwaQyJ9LgdhLpLYNbUg3bjOHaybM2HGc7GbDCx5UIjW10+Je8f3oza4tuZtWgBgr9qvmUjuteUYZGdll5KYoCmQI7v8LAAt7OkElcaBTcDFuNHSE3ej07VnZfnmMoYjOt2Rzrm1YDVyRMaTxGO8LzY6VOUed1UtLGBbOTsRs9PJZYcgmUdgIV3Wi6VOa2K2YFn0f3INzpW5QC2UduxnOQL3",
     "key_id": "2026a"
   }
 }
