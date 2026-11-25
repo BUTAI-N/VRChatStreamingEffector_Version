@@ -1,18 +1,22 @@
 {
-  "version": "0.2.14",
-  "released_on": "2026-11-24",
-  "updated_at": "2026-11-24T06:11:34+09:00",
+  "version": "0.2.15",
+  "released_on": "2026-11-26",
+  "updated_at": "2026-11-26T06:45:50+09:00",
   "patch_notes": [
-    "[0.2.14] リスナーノートの「AI で要約」で、メモに書いたことを、コメントより優先して要約に使うようにしました。AI の要約がまちがっていたときは、メモに正しい内容を書いて「AI で要約」を押すと、メモに合わせて要約し直します（メモを書き替えた人は、新しいコメントが無くても要約し直します）。メモの見出しは「メモ（AI要約の訂正にも使用できます）」にしました。",
-    "[0.2.14] 設定タブの「VR配信時にVRChatのウインドウを縮小して最適化を行う」を「配信実績の送信」の下へ移し、説明から配信ソフトの取り込みについての文を外しました。",
-    "[0.2.14] ギフト名の日本語表記の表を TikTok の最新の一覧で作り直し、一覧から無くなった 6 件を外しました。"
+    "[0.2.15] マッピングのルールの種別に「スタンプ」を足しました。視聴者がファンクラブ・スーパーファンのスタンプを送ったとき（コメントの途中のスタンプも数えます）に、OSC の送信や動画・音声の演出ができます。条件は「どのスタンプでも」「ファンクラブのスタンプ」「スーパーファンのスタンプ」「指定したスタンプ」から選べます。指定するスタンプは、配信者IDの配信で一度送られて保存されたスタンプの画像から選びます。1 つの投稿にスタンプがいくつあっても、発火は 1 回です。スタンプはログタブ・CSV・チャットボックス・カスタム通知には出しません。",
+    "[0.2.15] リスナーノートの「AI で要約」は、配信に接続しているあいだは灰色になり、押せないようにしました（これまでは、押すと確かめてから配信を切断していました）。切断すると押せるようになります。",
+    "[0.2.15] リスナーノートの「その他」を「ステータス」に改め、スーパーファン・メンバーレベル・フォロー済みかどうかを、アシストウインドウと同じ色の枠で出すようにしました（メンバーレベルのある人は、フォローの表示を出しません）。ステータスは、コメントやギフトが届くたびに新しくします（まだ届いていない人は「—」のままです）。タイルの並びも変えました（1 段目: ステータス・交流した日数・コメント・累計コイン / 2 段目: 最後に来た日・よく来る時間帯・最初に来た日・一人称）。並べ替えに「メンバーレベル順」、絞り込みに「スーパーファン」を足しました。",
+    "[0.2.15] リスナーノートに「名前を翻訳」を足しました。名前がハングルのリスナーの呼び名に、カタカナの読みを「ミンス(민수)」の形でまとめて入れます（呼び名がまだ無い人だけ。手で付けた呼び名は変えません）。「名前を翻訳」の左のメニューで向きを「日本語 → 韓国語」に変えると、ひらがな・カタカナの名前をハングルの読みに直せます。決まりで読みに直すだけで、AI は使わず、名前を外へ送ることもありません（意味は訳しません）。ボタンを足したので、AI の状態の行はボタンの上へ移しました。",
+    "[0.2.15] アシストウインドウのコメントビュワーで、名前をクリックして、その人のリスナーノートを開けるようにしました。アシストタブの「リスナーノート」の枠の「コメントビュワーの名前をクリックしてリスナーノートを開く」をオンにしたときだけ動きます（最初はオフ）。リスナーノートのウインドウが開いていれば、その人のページに替わります。",
+    "[0.2.15] アシストタブの「リスナーノート」の枠の並びを、「リスナーノートを開く」「リスナーノートの文字の大きさ」「コメントビュワーの名前をクリックしてリスナーノートを開く」「AI の準備」の順にしました。「AI の準備」のボタンはこの枠だけにし（リスナーノートのウインドウからは外しました）、配信に接続しているあいだは灰色になって押せません。",
+    "[0.2.15] ギフト名の日本語表記の表を TikTok の最新の一覧に合わせました（3 件増・「グライダー」の名前を新しくしました）。ギフト画像を 3 件同梱に足しました。"
   ],
   "message": "",
   "file": {
-    "name": "VRChatStreamingEffector-0.2.14.exe",
-    "size": 63215001,
-    "sha256": "c671b2867fa54d520aeb37bb6376f2c9079c59a29961969f2ff78693903c5799",
-    "signature": "K1rdMKr/3GySQAZiPe8jdpqUt20jH5QtKxl/1Y7fofvE88QoCgmWJbeD7G4AMiljbzBkONzR3PPw9Hf0nbITV8LcVbDLocytlrWJ9b1P6ATxXQ9TYlIiM6tBEn59C4/nqfGg8BoFQrO+sVmoIWxIJVj5n0rj4SSrUXOjbdIjBmqsk/MZFSLBE/XCapdhz5S3lbB1VQ8ICg3mSqKfdqlnhguFEmPoCaNyK+mCrxMygDAFbHYvR7XoMzxjK8PEiDMblIACCzPE3Ui9f8ae7u02GS1/fBED6qnBwehS1X/G/1021gApy+k3t0NwqTl9ax5AdYC1KnTfTeMnBvOQ/X6ymntdVYZ4nkOglKy5KhiIxTDs8OJLPOEO3HPDCoZTt5Re5pPQ1wCn7kP+9rrsTV9db+2gr0EHTCjwzz4o++GIf6PgJ7yYj/gWsbAZPyhGUk3A8tT2YRMq5SQgCuWz/2ctWFfPY9rxIvHkzSrlKY+r5k8KrHOBXZ/i/egD4APZpo0X",
+    "name": "VRChatStreamingEffector-0.2.15.exe",
+    "size": 63278078,
+    "sha256": "2cb979f3434f2522665c24a5f11211796c0f7ba95d3a6b31372cfa3bdb22ead1",
+    "signature": "q4myX3/9N19/N3jZ5ksepSAotJon316Jw67VoUcjI9XvRkjFw6g0pxseJ6RlWi59ooSGrE6niOTccQzgaeF7YdDxLPNW9zj1wPkXO1J1BS3xEQNW53+OeSZvum0PrODNKO6TMT4NZWrgxGcvF4rnJM0UoMDch5Yw0zSitqkeHfnq/GHRt+xihNxB3LKnAiKijvpEA39KZ0/Ihqnghyu/AZ2/TcC1h42mtJgMcysGEFGbbo6WEp6spddtf7JfaqhCov9A9Jz21svD0gh3Z2RZEi5vxaaUQV1QR5tAqXbEcVg3siTxFoEloNo3NU8FDPU8GL6Bcny1IP0qsGVqyUKeWkungSL1AcJuMtz5jg4Q0lv5agJA9QRwBfUi7m5Yi08MMNNQ5NXCXm3vEZt2wjbCgT+nWSTL7YIpKHEKBQHNgMPoACxrhOubt1B5epc3GhQs+KfpWtMo1z9XDzlTjLCbANIHn/vnlPP+JPNl6b2iIlmMTte3syibUXiQ/STtSfXH",
     "key_id": "2026a"
   }
 }
